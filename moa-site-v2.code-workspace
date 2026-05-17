@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "moa-site-v2",
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"liveServer.settings.multiRootWorkspaceName": "moa-site-v2",
+		"liveServer.settings.port": 5501
+	}
+}
