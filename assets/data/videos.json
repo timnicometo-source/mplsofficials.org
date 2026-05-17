@@ -1,0 +1,230 @@
+[
+ {
+    "id": "74d0be9a-2c81-45f7-a3d6-9b1e5c7f8a22",
+    "title": "Referee Announcement Training Video",
+    "description": "Referee Announcement Training Video",
+    "publishedDate": "2026-05-09",
+    "category": ["Football", "MSHSL"],
+    "series": ["MSHSL Training Tapes"],
+    "thumbnail": "/assets/images/video-catalog/tnMSHSL-referee.png",
+    "sourceType": "youtube",
+    "video": "https://www.youtube.com/watch?v=-K64ZxI4KBE"
+  },
+ 
+  {
+    "id": "c1a94e7b-5f23-4d68-b8a1-7e39f2c04d55",
+    "title": "25/40 Second Play Clock Training Tape",
+    "description": "25/40 Second Play Clock Training Tape",
+    "publishedDate": "2026-05-09",
+    "category": ["Football", "MSHSL"],
+    "series": ["MSHSL Training Tapes"],
+    "thumbnail": "/assets/images/video-catalog/tnMSHSL-40-25.png",
+    "sourceType": "youtube",
+    "video": "https://www.youtube.com/watch?v=ZAeJnlpzhNM"
+  },
+  
+  
+  
+  {
+    "id": "5a4680a4-ff6a-45b1-89b1-b32e6d990870",
+    "title": "MSHSL Training Tape #6",
+    "description": "Required for State Tournament Officials on Arbiter and Optional on YouTube",
+    "publishedDate": "2026-02-17",
+    "category": ["Basketball", "MSHSL"],
+    "series": ["MSHSL Training Tapes"],
+    "thumbnail": "/assets/images/video-catalog/mshsl-training-tape-6.png",
+    "sourceType": "youtube",
+    "video": "https://www.youtube.com/watch?v=vbuwYdDez1Q"
+  },
+  
+  {
+    "id": "bda7283c-2821-4f50-b326-f4528bd82b5a",
+    "title": "MSHSL Basketball Training Tape 4",
+    "description": "2025-26 MSHSL Training Tape 4. Watch on Arbiter for credit towards post season eligibility",
+    "publishedDate": "2026-01-20",
+    "category": ["Basketball", "MSHSL"],
+    "series": ["MSHSL Training Tapes"],
+    "thumbnail": "/assets/images/video-catalog/tn202526tt4.png",
+    "sourceType": "youtube",
+    "video": "https://www.youtube.com/watch?v=LQ7VTqvI2Kg"
+  },
+  {
+    "id": "2838a588-1668-4f1e-8b11-a711c68eb907",
+    "title": "MSHSL Basketball Training Tape 3",
+    "description": "2025-26 MSHSL Training Tape 3. Watch on Arbiter for credit towards post season eligibility",
+    "publishedDate": "2026-01-07",
+    "category": ["MSHSL", "Basketball"],
+    "series": ["MSHSL Training Tapes"],
+    "thumbnail": "/assets/images/video-catalog/tn202526tt3.png",
+    "sourceType": "youtube",
+    "video": "https://www.youtube.com/watch?v=Fx4t8sx3vxw"
+  },
+  {
+    "id": "0b86b76f-b8cd-4b65-966b-f92f6c41c2f2",
+    "title": "Arbiter Blocks",
+    "description": "Learn how to properly update your Arbiter Blocks to avoid being assigned a game when you are not avaiable.",
+    "publishedDate": "2025-12-24",
+    "category": ["Arbiter", "Officials"],
+    "series": ["Demystifying"],
+    "thumbnail": "/assets/images/video-catalog/arbiter-blocks.png",
+    "sourceType": "mp4",
+    "video": "assets/videos/video-catalog/Arbiter Blocks.mp4"
+  },
+  {
+    "id": "88c26e61-f3f5-4299-95bb-70e501ed1371",
+    "title": "Arbiter Profile Pic",
+    "description": "Learn how to create the perfect profile picture for your Arbiter account.",
+    "publishedDate": "2025-12-24",
+    "category": ["Arbiter", "Officials"],
+    "series": ["Demystifying"],
+    "thumbnail": "/assets/images/video-catalog/arbiter-profile-pic.png",
+    "sourceType": "mp4",
+    "video": "assets/videos/video-catalog/create profile Pic.mp4"
+  },
+  {
+    "id": "c5f042df-8ce2-4697-a5d6-8dc45ef8d088",
+    "title": "Arbiter Profile Settings and Alerts",
+    "description": "Learn how to successfully setup your Arbiter profile and receive alerts for new games, and changes to games.",
+    "publishedDate": "2025-12-24",
+    "category": ["Arbiter", "Officials"],
+    "series": ["Demystifying"],
+    "thumbnail": "/assets/images/video-catalog/arbiter-profile-settings-and-alerts.png",
+    "sourceType": "mp4",
+    "video": "assets/videos/video-catalog/Settings and Alerts.mp4"
+  },
+  {
+    "id": "e3040750-3b64-461b-a0a3-51892927a629",
+    "title": "Accepting Games in Arbiter",
+    "description": "Learn how to properly accept game assignments in Arbiter.",
+    "publishedDate": "2025-12-24",
+    "category": ["Arbiter", "Officials"],
+    "series": ["Demystifying"],
+    "thumbnail": "/assets/images/video-catalog/accepting-games-in-arbiter.png",
+    "sourceType": "mp4",
+    "video": "assets/videos/video-catalog/Accept Game Assignments_1.mp4"
+  },
+  
+  {
+    "id": "1b99dcb8-6bd9-4143-86dc-1f43bbb5507d",
+    "title": "MSHSL Basketball Training Tape 2",
+    "description": "2025-26 MSHSL Training Tape 2. Watch on Arbiter for credit towards post season eligibility",
+    "publishedDate": "2025-12-11",
+    "category": ["MSHSL", "Basketball"],
+    "series": ["MSHSL Training Tapes"],
+    "thumbnail": "/assets/images/video-catalog/tn202526tt2.png",
+    "sourceType": "youtube",
+    "video": "https://www.youtube.com/watch?v=FtMPZPiOAGA"
+  },
+  {
+    "id": "e6faf8bd-15a7-40ec-8c38-5ee95733eaf0",
+    "title": "MSHSL Basketball Training Tape 1",
+    "description": "2025-26MSHSL Training Tape 1. Watch on Arbiter for credit towards post season eligibility",
+    "publishedDate": "2025-12-04",
+    "category": ["MSHSL", "Basketball"],
+    "series": ["MSHSL Training Tapes"],
+    "thumbnail": "/assets/images/video-catalog/tn202526tt1.png",
+    "sourceType": "youtube",
+    "video": "https://www.youtube.com/watch?v=ZzL8ugUHQiY"
+  },
+  {
+    "id": "d7caa637-428f-45a4-adfe-22d45c893c78",
+    "title": "Game Assignment Information",
+    "description": "How to find detailed information about a game assignment in Arbiter. We'll also discuss best practices for confirming game assignments with the school and your parterns.",
+    "publishedDate": "2025-10-26",
+    "category": ["Officials", "Arbiter"],
+    "series": ["Demystifying"],
+    "thumbnail": "/assets/images/video-catalog/game-assignment-information.png",
+    "sourceType": "mp4",
+    "video": "assets/videos/video-catalog/Game Assignement Information_4.mp4"
+  },
+  {
+    "id": "0e741c56-8bee-4bcb-9faf-278e237739e4",
+    "title": "Introduction to Arbiter",
+    "description": "Introduction of the Arbiter Sports Platform",
+    "publishedDate": "2025-10-05",
+    "category": ["Officials", "Arbiter"],
+    "series": ["Demystifying"],
+    "thumbnail": "/assets/images/video-catalog/introduction-to-arbiter.png",
+    "sourceType": "mp4",
+    "video": "assets/videos/video-catalog/Intro to Series_final.mp4"
+  },
+  {
+    "id": "7abeda30-0f3e-4f2e-8c3c-a831d76e28ff",
+    "title": "Accept Game Assignments",
+    "description": "How to properly accept new game assignments from Arbiter Sports",
+    "publishedDate": "2025-09-26",
+    "category": ["Officials", "Arbiter"],
+    "series": ["Demystifying"],
+    "thumbnail": "/assets/images/video-catalog/accepting-games-in-arbiter.png",
+    "sourceType": "mp4",
+    "video": "assets/videos/video-catalog/Accept Game Assignments_1.mp4"
+  },
+  {
+    "id": "2a8a6a55-3fd9-4e6b-8c1f-b32e37e8f75f",
+    "title": "Accept an Invitation for an Existing Account",
+    "description": "How to accept an invitation from Arbiter Sports to join Hammersports Officials when you have an existing Arbiter account.",
+    "publishedDate": "2025-09-22",
+    "category": ["Officials", "Arbiter"],
+    "series": ["Demystifying"],
+    "thumbnail": "/assets/images/video-catalog/accept-an-invitation-for-an-existing-account.png",
+    "sourceType": "mp4",
+    "video": "assets/videos/video-catalog/Invitation Existing Account.mp4"
+  },
+  {
+    "id": "88e611ed-afaa-42aa-afa1-996c8d390a2c",
+    "title": "Complete your Profile",
+    "description": "How to complete the required information in your Arbiter profile.",
+    "publishedDate": "2025-09-22",
+    "category": ["Officials", "Arbiter"],
+    "series": ["Demystifying"],
+    "thumbnail": "/assets/images/video-catalog/complete-your-profile.png",
+    "sourceType": "mp4",
+    "video": "assets/videos/video-catalog/complete_profile.mp4"
+  },
+  {
+    "id": "209193e1-0cc8-4b8c-a950-b4bcf6f58c41",
+    "title": "Accept Invitation via Email",
+    "description": "How to accept an invitation to join our association's Arbiter Platform",
+    "publishedDate": "2025-09-08",
+    "category": ["Officials", "Arbiter"],
+    "series": ["Demystifying"],
+    "thumbnail": "/assets/images/video-catalog/accept-invitation-via-email.png",
+    "sourceType": "mp4",
+    "video": "assets/videos/video-catalog/Accept Invitation email Final_2.mp4"
+  },
+  {
+    "id": "d646dfd3-e039-4ff8-8cc1-38c67ef0a4ec",
+    "title": "Add Profile Photo",
+    "description": "Learn how to add a photo to your profile",
+    "publishedDate": "2025-09-08",
+    "category": ["Officials", "Arbiter"],
+    "series": ["Demystifying"],
+    "thumbnail": "/assets/images/video-catalog/add-profile-photo.png",
+    "sourceType": "mp4",
+    "video": "assets/videos/video-catalog/Add Profile Photo.mp4"
+  },
+  
+  {
+    "id": "cdb6575b-5d02-46bf-b7c3-7e953d9f1f02",
+    "title": "MSHSL Shot Clock",
+    "description": "Video created by MSHSL for shot clock rules and mechanics.",
+    "publishedDate": "2024-11-04",
+    "category": ["MSHSL", "Basketball"],
+    "series": ["MSHSL Training Tapes"],
+    "thumbnail": "/assets/images/video-catalog/mshsl-shot-clock.png",
+    "sourceType": "youtube",
+    "video": "https://www.youtube.com/watch?v=iNlP6CDAzno"
+  },
+  
+  {
+    "id": "22c92a1b-60e2-4cd1-8a7f-cf7cfc407b7a",
+    "title": "Restricted Area Rule Training Tape",
+    "description": "Rules and guidelines will be implemented for the Restricted Area Arc in all Minnesota State High School League basketball games beginning with the 2018-19 season. Here is an in-depth look at the rules, guidelines and enforcement of the rule.",
+    "publishedDate": "2018-10-31",
+    "category": ["MSHSL", "Basketball"],
+    "series": ["MSHSL Training Tapes"],
+    "thumbnail": "/assets/images/video-catalog/restricted-area-rule-training-tape.png",
+    "sourceType": "youtube",
+    "video": "https://www.youtube.com/watch?v=w56aeYCX78c"
+  }
+]

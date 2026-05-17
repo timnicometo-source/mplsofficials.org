@@ -4,31 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOA | Video Catalog</title>
-  <meta name="description" content="Training video catalog for MOA officials.">
+  <meta name="description" content="MOA basketball and football training videos, MSHSL resources, Arbiter tutorials, meeting recordings, and officiating development videos.">
+
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/video-catalog.css">
 </head>
-<body data-page="basketball">
+
+<body data-page="video-catalog">
   <div id="site-header"></div>
 
-<main class="inner-page">
-  <section class="page-hero">
-    <div class="container">
-      <p class="eyebrow">Minneapolis Officials Association</p>
-      <h1>Video Catalog</h1>
-      <p>Add basketball and football training videos here. This page is prepared for a simple card-based catalog.</p>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <div class="content-block">
-        <h2>Content Area</h2>
-        <p>Replace the placeholders below with the final links, forms, PDFs, images, or embeds.</p>
-        <div class="embed-placeholder">Embed or content placeholder</div>
+  <main class="video-catalog-page">
+    <section class="catalog-hero">
+      <div class="catalog-hero__inner">
+        <p class="catalog-eyebrow">Minneapolis Officials Association</p>
+        <h1>Video Catalog</h1>
+        <p class="catalog-intro">
+          Basketball and football training videos, MSHSL resources, Arbiter tutorials, and officiating development clips in one place.
+        </p>
+      </div>
+    </section>
+
+    <section class="catalog-controls" aria-label="Video filters">
+      <div class="filter-row" id="filterRow">
+        <button class="filter-btn is-active" data-filter-type="all" data-filter-value="all">All Videos</button>
+        <button class="filter-btn" data-filter-type="category" data-filter-value="Basketball">Basketball</button>
+        <button class="filter-btn" data-filter-type="category" data-filter-value="Football">Football</button>
+        <button class="filter-btn" data-filter-type="category" data-filter-value="MSHSL">MSHSL</button>
+        <button class="filter-btn" data-filter-type="category" data-filter-value="Arbiter">Arbiter</button>
+      </div>
+
+      <div class="catalog-summary">
+        <p id="resultsSummary">Loading videos...</p>
+      </div>
+    </section>
+
+    <section class="catalog-grid-section">
+      <div id="videoGrid" class="video-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <div class="video-modal" id="videoModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="video-modal__backdrop" data-close-modal="true"></div>
+
+    <div class="video-modal__panel">
+      <button class="video-modal__close" id="modalClose" aria-label="Close video">×</button>
+
+      <div class="video-modal__media" id="modalMedia"></div>
+
+      <div class="video-modal__body">
+        <p class="modal-kicker" id="modalMeta"></p>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
       </div>
     </div>
-  </section>
-</main>
+  </div>
+
+  <template id="videoCardTemplate">
+    <article class="video-card">
+      <div class="video-card__button">
+        <div class="video-card__floating">
+          <div class="video-card__thumb-wrap">
+            <img class="video-card__thumb" alt="">
+          </div>
+        </div>
+
+        <div class="video-card__content">
+          <h2 class="video-card__title-static"></h2>
+        </div>
+
+        <div class="video-card__hover-panel" aria-hidden="true">
+          <div class="video-card__hover-media">
+            <img class="video-card__hover-thumb" alt="">
+            <div class="video-card__hover-overlay"></div>
+          </div>
+
+          <div class="video-card__hover-content">
+            <h2 class="video-card__hover-title"></h2>
+            <p class="video-card__hover-meta"></p>
+            <p class="video-card__hover-desc"></p>
+            <p class="video-card__hover-date"></p>
+
+            <div class="video-card__hover-actions">
+              <button class="video-card__play" type="button">Watch Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </template>
+
   <div id="site-footer"></div>
-  <script src="../assets/js/main.js"></script>
+
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/video-catalog.js" defer></script>
 </body>
 </html>

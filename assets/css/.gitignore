@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Large local-only files
+assets/videos/
+assets/raw/
