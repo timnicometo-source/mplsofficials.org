@@ -28,9 +28,13 @@
    01. Base / Reset
    ========================================================= */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -42,7 +46,9 @@ body {
   transition: opacity 220ms ease-in-out;
 }
 
-body.page-ready { opacity: 1; }
+body.page-ready {
+  opacity: 1;
+}
 
 img {
   max-width: 100%;
@@ -87,10 +93,17 @@ a,
   margin: 0 auto;
 }
 
-.inner-page { background: #fff; }
+.inner-page {
+  background: #fff;
+}
 
-.page-section { padding: 4.2rem 0; }
-.page-section-tight { padding: 2.7rem 0; }
+.page-section {
+  padding: 4.2rem 0;
+}
+
+.page-section-tight {
+  padding: 2.7rem 0;
+}
 
 .section-intro {
   display: grid;
@@ -110,6 +123,13 @@ a,
 .section-intro p {
   margin: 0;
   color: var(--moa-muted);
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr;
+  gap: 1.5rem;
+  align-items: start;
 }
 
 /* =========================================================
@@ -282,8 +302,13 @@ a,
   gap: 1rem;
 }
 
-.cards-grid.three { grid-template-columns: repeat(3, 1fr); }
-.cards-grid.two { grid-template-columns: repeat(2, 1fr); }
+.cards-grid.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards-grid.two {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .card,
 .content-block,
@@ -294,7 +319,13 @@ a,
   box-shadow: 0 10px 28px rgba(15,23,42,.07);
 }
 
-.card { padding: 1.35rem; }
+.card {
+  padding: 1.35rem;
+}
+
+.content-block {
+  padding: 2rem;
+}
 
 .card:hover,
 .resource-list a:hover,
@@ -360,26 +391,30 @@ a,
 
 .resource-list a,
 .minutes-list a {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
   gap: 1rem;
   padding: .95rem 1rem;
   border: 1px solid var(--moa-border);
   border-radius: 14px;
   background: #fff;
   text-decoration: none;
-  font-weight: 650;
+  font-weight: 500;
   color: var(--moa-ink);
 }
+
 .resource-list a span:first-child,
 .minutes-list a span:first-child {
-  font-weight: 350;
+  color: var(--moa-ink);
+  font-weight: 500;
 }
 
+.resource-action,
 .resource-list a span:last-child,
 .minutes-list a span:last-child {
-  font-weight: 600;
   color: var(--moa-red-dark);
+  font-weight: 600;
   white-space: nowrap;
 }
 
@@ -405,7 +440,9 @@ a,
   border-bottom: 4px solid var(--moa-red);
 }
 
-.page-hero-large { padding: 4.5rem 0; }
+.page-hero-large {
+  padding: 4.5rem 0;
+}
 
 .page-hero h1 {
   margin: 0;
@@ -420,7 +457,9 @@ a,
   font-size: 1.12rem;
 }
 
-.page-hero .eyebrow { color: #fff; }
+.page-hero .eyebrow {
+  color: #fff;
+}
 
 .basketball-hero,
 .football-hero {
@@ -482,8 +521,13 @@ a,
   border: 1px solid rgba(255,255,255,.16);
 }
 
-.quick-list a:hover { background: rgba(255,255,255,.18); }
-.home-hero .eyebrow { color: #ffd8dc; }
+.quick-list a:hover {
+  background: rgba(255,255,255,.18);
+}
+
+.home-hero .eyebrow {
+  color: #ffd8dc;
+}
 
 .home-hero h1 {
   margin: 0;
@@ -541,7 +585,9 @@ a,
   color: rgba(255,255,255,.92);
 }
 
-.home-hero-simple .hero-actions { margin-top: 0; }
+.home-hero-simple .hero-actions {
+  margin-top: 0;
+}
 
 .split-section {
   background: linear-gradient(180deg, var(--moa-gray) 0%, #fff 100%);
@@ -596,7 +642,9 @@ a,
   color: rgba(255,255,255,.88);
 }
 
-.info-band .card h3 { color: #fff; }
+.info-band .card h3 {
+  color: #fff;
+}
 
 /* =========================================================
    09. Homepage Objective / Leadership Section
@@ -612,7 +660,9 @@ a,
   color: #fff;
 }
 
-.objective-section .eyebrow { color: rgba(255,255,255,.88); }
+.objective-section .eyebrow {
+  color: rgba(255,255,255,.88);
+}
 
 .objective-copy {
   max-width: 980px;
@@ -683,8 +733,13 @@ a,
   white-space: nowrap;
 }
 
-.leadership-card a:hover { color: #ffd8dc; }
-.leadership-card li span { color: rgba(255,255,255,.82); }
+.leadership-card a:hover {
+  color: #ffd8dc;
+}
+
+.leadership-card li span {
+  color: rgba(255,255,255,.82);
+}
 
 .leader-role {
   display: inline-block;
@@ -696,18 +751,9 @@ a,
    10. Inner Page Content
    ========================================================= */
 
-.content-block { padding: 2rem; }
-
 .content-block h2:first-child,
 .utility-block h1:first-child {
   margin-top: 0;
-}
-
-.two-column {
-  display: grid;
-  grid-template-columns: 1.2fr 1.2fr;
-  gap: 1.5rem;
-  align-items: start;
 }
 
 .callout {
@@ -737,10 +783,195 @@ a,
 }
 
 /* =========================================================
-   11. Page-Specific: Join MOA
+   11. Sport Pages
    ========================================================= */
 
-.join-moa-page { max-width: 960px; }
+.sport-page .page-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-top: 1px solid rgba(15, 23, 42, .04);
+}
+
+.sport-page .page-section-tight {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.sport-page .page-section:first-of-type {
+  border-top: 0;
+}
+
+.sport-intro-section {
+  background: #fff;
+}
+
+.sport-section-white {
+  background: #fff;
+}
+
+.sport-section-alt {
+  background: linear-gradient(
+    180deg,
+    #f5f7fa 0%,
+    #f8fafc 100%
+  );
+}
+
+.sport-page .content-block h2 {
+  margin-top: 0;
+}
+
+.sport-page .hub-actions {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.sport-page .cards-grid.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* =========================================================
+   12. Sport Photo Slideshow
+   ========================================================= */
+
+.basketball-intro-grid {
+  align-items: stretch;
+}
+
+.sport-image-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.officials-slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #111827;
+}
+
+.slideshow-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity .45s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  display: block;
+  object-fit: cover;
+  object-position: center 10%;
+}
+
+.slide img.slide-img-position-top {
+  object-position: center 18%;
+}
+
+.slideshow-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, .72);
+  color: #fff;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 3;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.slideshow-arrow:hover {
+  background: rgba(15, 23, 42, .9);
+  transform: translateY(-50%) scale(1.04);
+}
+
+.slideshow-arrow-prev {
+  left: 1rem;
+}
+
+.slideshow-arrow-next {
+  right: 1rem;
+}
+
+.slideshow-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  display: flex;
+  gap: .45rem;
+  z-index: 4;
+}
+
+.slideshow-dots .dot {
+  width: 11px;
+  height: 11px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .55);
+  cursor: pointer;
+  padding: 0;
+}
+
+.slideshow-dots .dot.active {
+  background: #fff;
+}
+
+/* =========================================================
+   13. State Tournament Officials
+   ========================================================= */
+
+.state-tournament-grid {
+  align-items: start;
+}
+
+.state-tournament-card {
+  height: 100%;
+}
+
+.officials-list {
+  columns: 2;
+  column-gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 0;
+}
+
+.officials-list li {
+  break-inside: avoid;
+  margin: 0 0 .45rem;
+  color: var(--moa-ink);
+  font-weight: 550;
+  line-height: 1.35;
+}
+
+/* =========================================================
+   14. Page-Specific: Join MOA
+   ========================================================= */
+
+.join-moa-page {
+  max-width: 960px;
+}
 
 .join-moa-page h1 {
   font-size: clamp(2.5rem, 4.2vw, 3.75rem);
@@ -762,11 +993,16 @@ a,
   margin-top: 0;
 }
 
-.join-moa-page a { font-weight: 700; }
-.join-moa-actions { margin-top: 2rem; }
+.join-moa-page a {
+  font-weight: 700;
+}
+
+.join-moa-actions {
+  margin-top: 2rem;
+}
 
 /* =========================================================
-   12. Page-Specific: Gear
+   15. Page-Specific: Gear
    ========================================================= */
 
 .gear-page {
@@ -774,7 +1010,9 @@ a,
   margin: 0 auto;
 }
 
-.gear-copy { margin-bottom: 1.75rem; }
+.gear-copy {
+  margin-bottom: 1.75rem;
+}
 
 .gear-page h1 {
   font-size: clamp(2.4rem, 4vw, 3.5rem);
@@ -791,7 +1029,9 @@ a,
   margin: 0 0 1.2rem;
 }
 
-.gear-intro { font-weight: 800; }
+.gear-intro {
+  font-weight: 800;
+}
 
 .gear-feature {
   margin: 1.75rem auto 2rem;
@@ -812,17 +1052,21 @@ a,
   box-shadow: 0 18px 45px rgba(15, 23, 42, .14);
 }
 
-.gear-note { margin-top: 2rem; }
+.gear-note {
+  margin-top: 2rem;
+}
 
 .gear-note h2 {
   margin-top: 0;
   font-size: 1.35rem;
 }
 
-.gear-note p { margin-bottom: 0; }
+.gear-note p {
+  margin-bottom: 0;
+}
 
 /* =========================================================
-   13. Page-Specific: FAQ
+   16. Page-Specific: FAQ
    ========================================================= */
 
 .faq-page {
@@ -830,7 +1074,9 @@ a,
   margin: 0 auto;
 }
 
-.faq-intro { margin-bottom: 1.75rem; }
+.faq-intro {
+  margin-bottom: 1.75rem;
+}
 
 .faq-intro h2 {
   margin: 0 0 .75rem;
@@ -871,7 +1117,9 @@ a,
   gap: 1rem;
 }
 
-.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
 
 .faq-item summary::after {
   content: "+";
@@ -892,7 +1140,7 @@ a,
 }
 
 .faq-item[open] summary::after {
-  content: "â€“";
+  content: "–";
   background: var(--moa-red);
   color: #fff;
 }
@@ -907,7 +1155,9 @@ a,
   line-height: 1.65;
 }
 
-.faq-answer p:last-child { margin-bottom: 0; }
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
 
 .faq-section-heading {
   margin: 2rem 0 1rem;
@@ -926,18 +1176,22 @@ a,
   color: var(--moa-muted);
 }
 
-.faq-callout { margin-top: 2rem; }
+.faq-callout {
+  margin-top: 2rem;
+}
 
 .faq-callout h2 {
   margin-top: 0;
   font-size: 1.4rem;
 }
 
-.faq-callout p { margin-bottom: 1rem; }
+.faq-callout p {
+  margin-bottom: 1rem;
+}
 
-/* ================================
-   Page-Specific: NASO
-================================ */
+/* =========================================================
+   17. Page-Specific: NASO
+   ========================================================= */
 
 .naso-layout {
   display: grid;
@@ -1052,20 +1306,8 @@ a,
   margin-bottom: 0;
 }
 
-@media (max-width: 900px) {
-  .naso-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .naso-flyer-card {
-    position: static;
-    max-width: 620px;
-    margin: 0 auto;
-  }
-}
-
 /* =========================================================
-   14. Video Catalog Starter
+   18. Video Catalog Starter
    ========================================================= */
 
 .video-grid {
@@ -1074,7 +1316,9 @@ a,
   gap: 1rem;
 }
 
-.video-card { overflow: hidden; }
+.video-card {
+  overflow: hidden;
+}
 
 .video-thumb {
   aspect-ratio: 16/9;
@@ -1087,7 +1331,15 @@ a,
 }
 
 /* =========================================================
-   15. Footer
+   19. Narrow Resource Blocks
+   ========================================================= */
+
+.narrow-resource-block {
+  max-width: 550px;
+}
+
+/* =========================================================
+   20. Footer
    ========================================================= */
 
 .site-footer {
@@ -1119,7 +1371,9 @@ a,
   margin: .35rem 0;
 }
 
-.site-footer a:hover { color: #fff; }
+.site-footer a:hover {
+  color: #fff;
+}
 
 .footer-bottom {
   margin-top: 2rem;
@@ -1128,13 +1382,9 @@ a,
   color: rgba(255,255,255,.65);
   font-size: .9rem;
 }
-/* Narrow resource blocks */
-.narrow-resource-block {
-  max-width: 550px;
-}
 
 /* =========================================================
-   16. Responsive
+   21. Responsive
    ========================================================= */
 
 @media (max-width: 1060px) {
@@ -1156,8 +1406,22 @@ a,
 }
 
 @media (max-width: 900px) {
-  .leadership-grid {
+  .leadership-grid,
+  .naso-layout,
+  .basketball-intro-grid {
     grid-template-columns: 1fr;
+  }
+
+  .naso-flyer-card {
+    position: static;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .officials-slideshow,
+  .slideshow-track,
+  .slide img {
+    min-height: 260px;
   }
 }
 
@@ -1174,7 +1438,9 @@ a,
   .cards-grid.three,
   .cards-grid.two,
   .video-grid,
-  .hub-actions {
+  .hub-actions,
+  .sport-page .hub-actions,
+  .sport-page .cards-grid.two {
     grid-template-columns: 1fr;
   }
 
@@ -1193,7 +1459,12 @@ a,
     font-size: 1.1rem;
   }
 
-  .page-section {
+  .page-section,
+  .sport-page .page-section {
+    padding: 3rem 0;
+  }
+
+  .sport-page .page-section-tight {
     padding: 3rem 0;
   }
 
@@ -1211,5 +1482,23 @@ a,
 
   .faq-item summary {
     align-items: flex-start;
+  }
+
+  .resource-list a,
+  .minutes-list a {
+    grid-template-columns: 1fr;
+    gap: .35rem;
+  }
+
+  .resource-action,
+  .resource-list a span:last-child,
+  .minutes-list a span:last-child {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 700px) {
+  .officials-list {
+    columns: 1;
   }
 }

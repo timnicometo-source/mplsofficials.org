@@ -41,7 +41,84 @@ function setActiveNavLink() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', loadIncludes);
+function initSlideshows() {
+  const slideshows = document.querySelectorAll('[data-slideshow]');
+
+  slideshows.forEach((slideshow) => {
+    const slides = Array.from(slideshow.querySelectorAll('.slide'));
+    const dots = Array.from(slideshow.querySelectorAll('.dot'));
+    const prevButton = slideshow.querySelector('.slideshow-arrow-prev');
+    const nextButton = slideshow.querySelector('.slideshow-arrow-next');
+
+    if (!slides.length) return;
+
+    let currentIndex = slides.findIndex((slide) => slide.classList.contains('active'));
+
+    if (currentIndex < 0) {
+      currentIndex = 0;
+    }
+
+    let autoAdvance;
+
+    function showSlide(index) {
+      currentIndex = (index + slides.length) % slides.length;
+
+      slides.forEach((slide, slideIndex) => {
+        slide.classList.toggle('active', slideIndex === currentIndex);
+      });
+
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle('active', dotIndex === currentIndex);
+      });
+    }
+
+    function startAutoAdvance() {
+      stopAutoAdvance();
+
+      autoAdvance = window.setInterval(() => {
+        showSlide(currentIndex + 1);
+      }, 6000);
+    }
+
+    function stopAutoAdvance() {
+      if (autoAdvance) {
+        window.clearInterval(autoAdvance);
+      }
+    }
+
+    if (prevButton) {
+      prevButton.addEventListener('click', () => {
+        showSlide(currentIndex - 1);
+        startAutoAdvance();
+      });
+    }
+
+    if (nextButton) {
+      nextButton.addEventListener('click', () => {
+        showSlide(currentIndex + 1);
+        startAutoAdvance();
+      });
+    }
+
+    dots.forEach((dot, dotIndex) => {
+      dot.addEventListener('click', () => {
+        showSlide(dotIndex);
+        startAutoAdvance();
+      });
+    });
+
+    slideshow.addEventListener('mouseenter', stopAutoAdvance);
+    slideshow.addEventListener('mouseleave', startAutoAdvance);
+
+    showSlide(currentIndex);
+    startAutoAdvance();
+  });
+}
+
+document.addEventListener('DOMContentLoaded', async function () {
+  await loadIncludes();
+  initSlideshows();
+});
 
 window.addEventListener('load', () => {
   document.body.classList.add('page-ready');
