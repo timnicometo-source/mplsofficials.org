@@ -1,0 +1,36 @@
+[
+  {
+  "title": "Harry Kitts - MBCA Hall of Honor",
+  "slug": "harry-kitts-mbca-hall-of-honor",
+  "url": "news/harry-kitts-mbca-hall-of-honor.html",
+  "publishDate": "2023-10-25",
+  "publishDateDisplay": "October 25, 2023",
+  "newsType": "General News",
+  "description": "Harry Kitts has been a selection for induction to the Minnesota Basketball Coaches Association Hall of Honor on Friday, October 27th. Below is the bio from the press release.",
+  "image": "assets/images/news/Kitts.avif",
+  "featured": true
+},
+{
+  "title": "Lamarr Sullivan - MBCA Hall of Honor",
+  "slug": "lamarr-sullivan-mbca-hall-of-honor",
+  "url": "news/lamarr-sullivan-mbca-hall-of-honor.html",
+  "publishDate": "2023-10-15",
+  "publishDateDisplay": "October 15, 2023",
+  "newsType": "General News",
+  "description": "Lamarr Sullivan has been a selection for induction to the Minnesota Basketball Coaches Association Hall of Honor on Friday, October 27th. Below is the bio from the press release.",
+  "image": "assets/images/news/Sullivan.avif",
+  "featured": true
+},
+
+{
+  "title": "After Leading Apple Valley To Three State Titles, He’s Now Working With A Whistle",
+  "slug": "after-leading-apple-valley-to-three-state-titles-hes-now-working-with-a-whistle",
+  "url": "news/after-leading-apple-valley-to-three-state-titles-hes-now-working-with-a-whistle.html",
+  "publishDate": "2024-02-08",
+  "publishDateDisplay": "February 8, 2024",
+  "newsType": "General News",
+  "description": "Former Apple Valley boys basketball coach Zach Goring officiates a sub-varsity game at Bloomington Kennedy.",
+  "image": "assets/images/news/news1.png",
+  "featured": true
+}
+]

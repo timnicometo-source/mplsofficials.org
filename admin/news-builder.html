@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOA News Builder | Admin Tool</title>
+  <meta name="description" content="Build formatted MOA news article pages and matching news JSON entries.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="news-builder">
+  <div id="site-header"></div>
+
+  <main class="inner-page">
+    <section class="page-section page-section-tight">
+      <div class="container">
+        <div class="news-builder-shell">
+          <div class="news-builder-heading">
+            <p class="section-label">Admin Tool</p>
+            <h1>MOA News Builder</h1>
+            <p>Use this tool to generate a new news article page and the matching <code>news.json</code> entry.</p>
+          </div>
+
+          <div class="news-builder-grid">
+            <section class="news-builder-panel">
+              <h2>Article Details</h2>
+
+              <form id="newsBuilderForm" class="news-builder-form">
+                <div class="builder-field">
+                  <label for="title">Article Title</label>
+                  <input id="title" type="text" placeholder="Example News Title">
+                </div>
+
+                <div class="builder-field">
+                  <label for="publishDate">Publish Date</label>
+                  <input id="publishDate" type="date">
+                </div>
+
+                <div class="builder-field">
+                  <label for="newsType">News Type</label>
+                  <select id="newsType">
+                    <option value="General News">General News</option>
+                    <option value="Announcements">Announcements</option>
+                    <option value="Meetings">Meetings</option>
+                    <option value="Training">Training</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Football">Football</option>
+                    <option value="Clinics and Camps">Clinics and Camps</option>
+                    <option value="Member Resources">Member Resources</option>
+                    <option value="New Officials">New Officials</option>
+                    <option value="Recognition">Recognition</option>
+                  </select>
+                </div>
+
+                <div class="builder-field">
+                  <label for="description">Short Description / Archive Excerpt</label>
+                  <textarea id="description" placeholder="Short summary that appears on cards and in the archive."></textarea>
+                </div>
+
+                <div class="builder-field">
+                  <label for="heroImage">Hero / Thumbnail Image Path</label>
+                  <div class="builder-file-row">
+                    <input id="heroImage" type="text" placeholder="assets/images/news/example-image.jpg">
+                    <button class="button button-outline builder-small-button" id="browseHeroImageBtn" type="button">Browse</button>
+                    <input id="heroImageFile" type="file" accept="image/*" hidden>
+                  </div>
+                  <p class="builder-help">After browsing, copy the selected image into <strong>assets/images/news/</strong>.</p>
+                </div>
+
+                <div class="builder-field">
+                  <label for="featured">Featured Article?</label>
+                  <select id="featured">
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                  </select>
+                </div>
+
+                <div class="builder-field">
+                  <label for="eyebrow">Optional Eyebrow Label</label>
+                  <input id="eyebrow" type="text" placeholder="MOA News">
+                </div>
+
+                <div class="builder-field">
+                  <label for="subheading">Optional Subheading / Deck</label>
+                  <textarea id="subheading" placeholder="One-sentence summary shown near the top of the article."></textarea>
+                </div>
+
+                <div class="builder-field">
+                  <label for="articleBodyEditor">Article Body</label>
+
+                  <div class="editor-toolbar" aria-label="Article formatting toolbar">
+                    <button class="editor-btn" type="button" data-command="bold">B</button>
+                    <button class="editor-btn" type="button" data-command="italic"><em>I</em></button>
+                    <button class="editor-btn" type="button" data-command="insertUnorderedList">• List</button>
+                    <button class="editor-btn" type="button" data-command="insertOrderedList">1. List</button>
+                    <button class="editor-btn" type="button" data-command="formatBlock" data-value="h2">H2</button>
+                    <button class="editor-btn" type="button" data-command="formatBlock" data-value="h3">H3</button>
+                    <button class="editor-btn" type="button" data-command="formatBlock" data-value="p">P</button>
+
+                    <select class="editor-select" id="fontFamilySelect" aria-label="Font family">
+                      <option value="">Font</option>
+                      <option value="Arial">Arial</option>
+                      <option value="Georgia">Georgia</option>
+                      <option value="Times New Roman">Times</option>
+                      <option value="Verdana">Verdana</option>
+                      <option value="Inter">Inter</option>
+                    </select>
+
+                    <select class="editor-select" id="fontSizeSelect" aria-label="Font size">
+                      <option value="">Size</option>
+                      <option value="2">Small</option>
+                      <option value="3">Normal</option>
+                      <option value="4">Large</option>
+                      <option value="5">Larger</option>
+                    </select>
+
+                    <button class="editor-btn" id="addLinkBtn" type="button">Link</button>
+                    <button class="editor-btn" type="button" data-command="removeFormat">Clear</button>
+                  </div>
+
+                  <div id="articleBodyEditor" class="article-body-editor" contenteditable="true"></div>
+                  <textarea id="articleBody" hidden></textarea>
+                </div>
+
+                <div class="builder-field">
+                  <label for="inlineImage">Optional Additional Article Image Path</label>
+                  <div class="builder-file-row">
+                    <input id="inlineImage" type="text" placeholder="assets/images/news/example-inline.jpg">
+                    <button class="button button-outline builder-small-button" id="browseInlineImageBtn" type="button">Browse</button>
+                    <input id="inlineImageFile" type="file" accept="image/*" hidden>
+                  </div>
+                  <p class="builder-help">This image appears inside the article body below the hero image.</p>
+                </div>
+
+                <div class="builder-field">
+                  <label for="inlineImageAlt">Optional Additional Image Alt Text</label>
+                  <input id="inlineImageAlt" type="text" placeholder="Describe the additional article image">
+                </div>
+
+                <div class="builder-actions">
+                  <button class="button button-primary" type="submit">Generate Article</button>
+                  <button class="button button-outline" id="startNewArticleBtn" type="button">Start New Article</button>
+                </div>
+              </form>
+            </section>
+
+            <aside class="news-builder-output-stack">
+              <section class="news-builder-output-card">
+                <div class="builder-output-heading">
+                  <h2>Generated File Info</h2>
+                  <button type="button" data-copy-target="fileInfoOutput">Copy</button>
+                </div>
+                <textarea id="fileInfoOutput" readonly></textarea>
+              </section>
+
+              <section class="news-builder-output-card">
+                <div class="builder-output-heading">
+                  <h2>Generated JSON Entry</h2>
+                  <button type="button" data-copy-target="jsonOutput">Copy</button>
+                </div>
+                <textarea id="jsonOutput" readonly></textarea>
+              </section>
+
+              <section class="news-builder-output-card">
+                <div class="builder-output-heading">
+                  <h2>Generated Article HTML</h2>
+                  <button type="button" data-copy-target="htmlOutput">Copy</button>
+                </div>
+                <textarea id="htmlOutput" readonly></textarea>
+              </section>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/news-builder.js"></script>
+</body>
+</html>
