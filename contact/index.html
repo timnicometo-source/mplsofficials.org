@@ -3,37 +3,198 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>MOA | Contact</title>
-  <meta name="description" content="MOA leadership and contact information.">
+  <meta name="description" content="Contact the Minneapolis Officials Association for membership, basketball, football, assigning, website, and general association questions.">
+
   <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Favicons / Home Screen Icons -->
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ab242f">
 </head>
+
 <body data-page="contact">
   <div id="site-header"></div>
 
-<main class="inner-page">
-  <section class="page-hero">
-    <div class="container">
-      <p class="eyebrow">Minneapolis Officials Association</p>
-      <h1>Contact MOA</h1>
-      <p>Contact MOA leadership, assignment directors, board members, or the site administrator.</p>
-    </div>
-  </section>
-  <section class="page-section">
-    <div class="container">
-      <div class="content-block">
-        <h2>Who Should I Contact?</h2>
-        <p>Use the contact options below to reach the appropriate MOA representative. For general questions,
-    start with the general inquiry contact. For sport-specific questions, contact the appropriate
-    director of operations.</p>
-        <ul class="resource-list"><li><a href="mailto:mplsofficials@gmail.com">General Inquiry <span>→</span></a></li><li>
-          <li><a href="mailto:timnicometo@gmail.com">Web Master <span>→</span></a></li><li></li>
-          <a href="mailto:gussy97@msn.com">Director of Basketball Operations - Zach Gustafson<span>→</span></a></li><li><a href="mailto:mrthurow@yahoo.com">Director of Football Operations - Josh Thurow <span>→</span></a></li></ul>
+  <main class="inner-page contact-page">
 
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Minneapolis Officials Association</p>
+        <h1>Contact MOA</h1>
+        <p>
+          Have a question about membership, basketball, football, assigning, association business,
+          website content, or general MOA information? Choose a topic below and we’ll help route your message.
+        </p>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <div class="contact-main">
+            <div class="contact-heading">
+              <p class="section-label">Get in Touch</p>
+              <h2>Send MOA a Message</h2>
+              <p>
+                To reduce exposed individual email addresses and help protect members from impersonation attempts,
+                MOA now routes public contact through this central contact page.
+              </p>
+            </div>
+
+            <div class="contact-form-card">
+              <label for="contactCategory" class="contact-label">
+                What is your message about?
+              </label>
+
+              <select id="contactCategory" class="contact-select">
+                <option value="general">General Question</option>
+                <option value="membership">Membership / Joining MOA</option>
+                <option value="basketball">Basketball</option>
+                <option value="football">Football</option>
+                <option value="assigning">Assigning / Scheduling</option>
+                <option value="dues">Dues / Payment Help</option>
+                <option value="meetings">Meetings / Calendar</option>
+                <option value="board">Board / Leadership</option>
+                <option value="website">Website Help / Content Update</option>
+                <option value="security">Suspicious Email / Security Concern</option>
+              </select>
+
+              <div class="contact-preview-card">
+                <p class="contact-preview-label">Your email subject will be:</p>
+                <p id="contactSubjectPreview" class="contact-subject-preview">
+                  MOA Contact: General Question
+                </p>
+              </div>
+
+              <button
+                id="contactEmailButton"
+                class="button button-primary contact-email-button"
+                type="button"
+              >
+                Continue to Email MOA
+              </button>
+
+              <p class="contact-helper-text">
+                Your email app will open with a pre-filled subject line. Please include your name,
+                sport if applicable, and a brief description of how MOA can help.
+              </p>
+            </div>
+          </div>
+
+          <aside class="contact-sidebar">
+            <div class="contact-info-panel">
+              <p class="card-meta">MOA</p>
+              <h3>Contact Notes</h3>
+              <p>
+                Email is the best way to reach MOA for general questions, membership information,
+                basketball and football resources, assigning questions, dues help, and website-related items.
+              </p>
+              <p>
+                Please allow time for the appropriate association representative to review and respond.
+              </p>
+              <p>
+                <strong>Location:</strong><br>
+                Minneapolis, Minnesota
+              </p>
+            </div>
+
+            <div class="contact-info-panel contact-security-panel">
+              <p class="card-meta">Security Reminder</p>
+              <h3>Watch for Impersonation Emails</h3>
+              <p>
+                MOA officers and board members will not ask members by email to purchase gift cards
+                or similar items.
+              </p>
+              <p>
+                If you receive a suspicious message claiming to be from MOA leadership, do not reply,
+                click links, or purchase anything. Use this contact page to verify the message.
+              </p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
   <div id="site-footer"></div>
+
   <script src="../assets/js/main.js"></script>
+
+  <script>
+    const MOA_EMAIL_PARTS = ['tegillund', 'gmail', 'com'];
+
+    const contactCategories = {
+      general: 'General Question',
+      membership: 'Membership / Joining MOA',
+      basketball: 'Basketball',
+      football: 'Football',
+      assigning: 'Assigning / Scheduling',
+      dues: 'Dues / Payment Help',
+      meetings: 'Meetings / Calendar',
+      board: 'Board / Leadership',
+      website: 'Website Help / Content Update',
+      security: 'Suspicious Email / Security Concern'
+    };
+
+    function getMoaEmailAddress() {
+      return `${MOA_EMAIL_PARTS[0]}@${MOA_EMAIL_PARTS[1]}.${MOA_EMAIL_PARTS[2]}`;
+    }
+
+    function getCategoryFromUrl() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('category') || 'general';
+    }
+
+    function updateContactPreview() {
+      const select = document.getElementById('contactCategory');
+      const subjectPreview = document.getElementById('contactSubjectPreview');
+
+      if (!select || !subjectPreview) return;
+
+      const selectedValue = select.value;
+      const selectedLabel = contactCategories[selectedValue] || contactCategories.general;
+      const subjectText = `MOA Contact: ${selectedLabel}`;
+
+      subjectPreview.textContent = subjectText;
+    }
+
+    function openEmailClient() {
+      const select = document.getElementById('contactCategory');
+      if (!select) return;
+
+      const selectedValue = select.value;
+      const selectedLabel = contactCategories[selectedValue] || contactCategories.general;
+      const subjectText = `MOA Contact: ${selectedLabel}`;
+      const emailAddress = getMoaEmailAddress();
+
+      window.location.href = `mailto:${emailAddress}?subject=${encodeURIComponent(subjectText)}`;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const select = document.getElementById('contactCategory');
+      const button = document.getElementById('contactEmailButton');
+
+      if (!select || !button) return;
+
+      const urlCategory = getCategoryFromUrl();
+
+      if (contactCategories[urlCategory]) {
+        select.value = urlCategory;
+      }
+
+      updateContactPreview();
+
+      select.addEventListener('change', updateContactPreview);
+      button.addEventListener('click', openEmailClient);
+    });
+  </script>
 </body>
 </html>

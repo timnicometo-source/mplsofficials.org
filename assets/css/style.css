@@ -1,7 +1,7 @@
 :root {
   /* Brand colors */
-  --moa-red: #b3202d;
-  --moa-red-dark: #8d1722;
+  --moa-red: #ab242f;
+  --moa-red-dark: #ab242f;
   --moa-red-soft: #f8e8ea;
 
   /* Neutrals */
@@ -13,10 +13,10 @@
   --moa-gray-2: #edf1f6;
   --moa-white: #ffffff;
 
-  /* Shared lighter hero colors */
-  --moa-hero-left: #7f2f3a;
-  --moa-hero-mid: #9b3b45;
-  --moa-hero-right: #b8525b;
+  /* Shared hero colors */
+  --moa-hero-left: #ab242f;
+  --moa-hero-mid: #ab242f;
+  --moa-hero-right: #ab242f;
 
   /* Layout */
   --max-width: 1120px;
@@ -545,12 +545,7 @@ a,
 }
 
 .home-hero-simple {
-  background: linear-gradient(
-    135deg,
-    var(--moa-hero-left) 0%,
-    var(--moa-hero-mid) 48%,
-    var(--moa-hero-right) 100%
-  );
+  background: var(--moa-red);
   color: #fff;
   padding: 3.75rem 0;
 }
@@ -563,7 +558,7 @@ a,
 .home-hero-simple .eyebrow {
   display: inline-flex;
   align-items: center;
-  background: rgba(179,32,45,.92);
+  background: rgba(171,36,47,.92);
   border: 1px solid rgba(255,255,255,.28);
   border-radius: 999px;
   padding: .4rem .75rem;
@@ -1451,6 +1446,186 @@ a,
   border-top: 1px solid rgba(255,255,255,.15);
   color: rgba(255,255,255,.65);
   font-size: .9rem;
+}
+
+/* =========================================================
+   Contact Page
+   ========================================================= */
+
+.contact-page .page-hero {
+  background: var(--moa-red);
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, .75fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.contact-main {
+  min-width: 0;
+}
+
+.contact-heading {
+  margin-bottom: 1.4rem;
+}
+
+.contact-heading h2 {
+  margin: 0 0 .75rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -.04em;
+  color: var(--moa-ink);
+}
+
+.contact-heading p {
+  max-width: 760px;
+  margin: 0;
+  color: var(--moa-muted);
+  font-size: 1.05rem;
+}
+
+.contact-form-card,
+.contact-info-panel {
+  background: #fff;
+  border: 1px solid var(--moa-border);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, .07);
+}
+
+.contact-form-card {
+  padding: 1.5rem;
+}
+
+.contact-label {
+  display: block;
+  margin-bottom: .45rem;
+  color: var(--moa-ink);
+  font-weight: 900;
+}
+
+.contact-select {
+  width: 100%;
+  min-height: 50px;
+  padding: .85rem .95rem;
+  border: 1px solid var(--moa-border);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--moa-ink);
+  font: inherit;
+}
+
+.contact-select:focus {
+  outline: none;
+  border-color: var(--moa-red);
+  box-shadow: 0 0 0 3px rgba(171, 36, 47, .14);
+}
+
+.contact-preview-card {
+  margin: 1.25rem 0;
+  padding: 1rem;
+  border-radius: 14px;
+  background: var(--moa-red-soft);
+  border: 1px solid rgba(171, 36, 47, .18);
+}
+
+.contact-preview-label {
+  margin: 0 0 .25rem;
+  color: var(--moa-muted);
+  font-size: .8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .11em;
+}
+
+.contact-subject-preview {
+  margin: 0;
+  color: var(--moa-red-dark);
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.contact-email-button {
+  width: 100%;
+  min-height: 50px;
+  cursor: pointer;
+}
+
+.contact-helper-text {
+  margin: 1rem 0 0;
+  color: var(--moa-muted);
+  font-size: .95rem;
+  line-height: 1.55;
+}
+
+.contact-sidebar {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-info-panel {
+  padding: 1.35rem;
+}
+
+.contact-info-panel .card-meta {
+  margin: 0 0 .45rem;
+  color: var(--moa-red);
+  font-size: .72rem;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.contact-info-panel h3 {
+  margin: 0 0 .75rem;
+  color: var(--moa-ink);
+  font-size: 1.35rem;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+}
+
+.contact-info-panel p {
+  margin: 0 0 .9rem;
+  color: var(--moa-muted);
+}
+
+.contact-info-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-security-panel {
+  background: var(--moa-gray);
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.leadership-contact-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.leadership-contact-link:hover {
+  color: #ffd8dc;
+}
+
+.leadership-contact-actions {
+  display: grid;
+  gap: .45rem;
+  margin-top: 1rem;
+}
+
+.leadership-contact-actions .leadership-contact-link {
+  margin-top: 0;
 }
 /* =========================================================
    22. News Feature
