@@ -1,6 +1,42 @@
 [
   
   {
+    "id": "74d0be9a-2c81-45f7-a3d6-9b1e5c7f8a27",
+    "title": "2026 MOA Football Officiating Clinic",
+    "description": "2026 MOA Football Officiating Clinic",
+    "publishedDate": "2026-10-11",
+    "category": ["Football"],
+    "series": ["MOA Training Tapes"],
+    "thumbnail": "https://resources.sandpiper-productions.com/videos/football/tt3-tn.png",
+    "sourceType": "PowerPoint Download",
+    "video": "https://resources.sandpiper-productions.com/videos/football/2026-MOA-Football-Officiating-Clinicv2.pptx"
+ },
+  
+  {
+    "id": "74d0be9a-2c81-45f7-a3d6-9b1e5c7f8a24",
+    "title": "MOA Football Training Video 2026 #2",
+    "description": "MOA Football Training Video 2026",
+    "publishedDate": "2026-10-11",
+    "category": ["Football"],
+    "series": ["MOA Training Tapes"],
+    "thumbnail": "https://resources.sandpiper-productions.com/videos/football/tt2-tn.png",
+    "sourceType": "Zoom Recording",
+    "video": "https://resources.sandpiper-productions.com/videos/football/MOA-FB-Training-Tape-2.mp4"
+ },
+
+ {
+    "id": "74d0be9a-2c81-45f7-a3d6-9b1e5c7f8a25",
+    "title": "MOA Football Training Video 2026",
+    "description": "MOA Football Training Video 2026",
+    "publishedDate": "2026-08-20",
+    "category": ["Football"],
+    "series": ["MOA Training Tapes"],
+    "thumbnail": "https://resources.sandpiper-productions.com/videos/football/tt1-tn.png",
+    "sourceType": "Zoom Recording",
+    "video": "https://resources.sandpiper-productions.com/videos/football/MOA-FB-Training-Tape-1.mp4"
+ },
+  
+  {
   "id": "2026 MSHSL Football Officiating Training Tape #6",
   "title": "2026 MSHSL Football Officiating Training Tape #6",
     "description": "2026 MSHSL Football Officiating Training Tape #6",
