@@ -1,0 +1,732 @@
+/* Understanding the Game
+   MOA fan guides
+   Load after /assets/css/style.css.
+*/
+
+.moa-fans-page {
+  color: var(--moa-black);
+}
+
+.moa-fans-page section[id] {
+  scroll-margin-top: 170px;
+}
+
+.moa-fans-page .page-section-alt {
+  background: var(--moa-gray);
+}
+
+.moa-fans-page .section-heading {
+  max-width: 900px;
+  margin-bottom: 1.8rem;
+}
+
+.moa-fans-page .section-kicker {
+  margin: 0 0 0.5rem;
+  color: var(--moa-red);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.moa-fans-page h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.8rem, 3.8vw, 2.7rem);
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  color: var(--moa-black);
+}
+
+.moa-fans-page h3,
+.moa-fans-page h4 {
+  color: var(--moa-black);
+}
+
+.moa-fans-page .section-heading > p:last-child {
+  margin-bottom: 0;
+  color: var(--moa-muted);
+}
+
+/* HERO AND NAVIGATION */
+
+.moa-fans-page .page-hero .hero-actions {
+  align-items: center;
+}
+
+.moa-fans-page .page-hero .button-primary,
+.moa-fans-page .page-hero .button-secondary {
+  background: #fff;
+  color: var(--moa-red);
+}
+
+.moa-fans-page .page-hero .hero-actions .text-link {
+  color: #fff;
+  padding: 0.65rem 0;
+}
+
+.moa-fans-page .page-hero a:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 4px;
+}
+
+.moa-fans-page .playbook-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 1.4rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.moa-fans-page .playbook-breadcrumb a {
+  color: #fff;
+}
+
+.moa-fans-page .hero-actions,
+.moa-fans-page .document-actions,
+.moa-fans-page .recruit-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.2rem;
+}
+
+.moa-fans-page .hero-actions > a,
+.moa-fans-page .document-actions > a,
+.moa-fans-page .recruit-actions > a {
+  margin: 0;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.moa-fans-page .text-link {
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+/* CONTENT CARDS */
+
+.moa-fans-page .content-card {
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--moa-border);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.07);
+}
+
+.moa-fans-page .content-card h3 {
+  margin-top: 0;
+  line-height: 1.25;
+}
+
+.moa-fans-page .content-card p {
+  color: var(--moa-muted);
+  line-height: 1.75;
+}
+
+.moa-fans-page .content-card > p:last-child {
+  margin-bottom: 0;
+}
+
+.moa-fans-page .fan-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.8fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.moa-fans-page .fan-intro-grid > div > p:last-child {
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+.moa-fans-page .fan-note-card {
+  border-top: 4px solid var(--moa-red);
+}
+
+/* GRIDS */
+
+.moa-fans-page .position-grid,
+.moa-fans-page .rule-card-grid,
+.moa-fans-page .basketball-myth-grid,
+.moa-fans-page .mercy-rule-grid,
+.moa-fans-page .fan-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.moa-fans-page .three-position-grid,
+.moa-fans-page .football-info-grid,
+.moa-fans-page .holding-check-grid,
+.moa-fans-page .basketball-signal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+/* CREW POSITIONS */
+
+.moa-fans-page .position-card {
+  border-top: 4px solid var(--moa-black);
+}
+
+.moa-fans-page .position-card-referee {
+  border-top-color: var(--moa-red);
+}
+
+.moa-fans-page .position-card-wide,
+.moa-fans-page .rule-card-wide {
+  grid-column: 1 / -1;
+}
+
+.moa-fans-page .position-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.moa-fans-page .position-card-heading h3,
+.moa-fans-page .position-card-heading p {
+  margin: 0;
+}
+
+.moa-fans-page .position-card-heading p {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.moa-fans-page .position-badge {
+  display: grid;
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
+  place-items: center;
+  border: 2px solid var(--moa-black);
+  border-radius: 50%;
+  background: var(--moa-black);
+  color: #fff;
+  font-weight: 900;
+}
+
+.moa-fans-page .position-badge-white {
+  background: #fff;
+  color: var(--moa-black);
+}
+
+.moa-fans-page .position-location {
+  margin: 0 0 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--moa-red) !important;
+}
+
+/* CALLOUTS AND CREW COVERAGE */
+
+.moa-fans-page .crew-reminder,
+.moa-fans-page .football-callout,
+.moa-fans-page .basketball-crew-coverage {
+  margin-top: 1.5rem;
+  padding: 1.4rem;
+  border-left: 5px solid var(--moa-red);
+  border-radius: 0 14px 14px 0;
+  background: var(--moa-red-soft);
+}
+
+.moa-fans-page .crew-reminder > strong,
+.moa-fans-page .football-callout > strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.moa-fans-page .crew-reminder p,
+.moa-fans-page .football-callout p {
+  margin: 0;
+  line-height: 1.75;
+}
+
+.moa-fans-page .basketball-crew-coverage h3 {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+}
+
+.moa-fans-page .basketball-crew-coverage > p:last-child {
+  margin-bottom: 0;
+}
+
+/* DOCUMENTS */
+
+.moa-fans-page .document-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 92px;
+  gap: 2rem;
+  align-items: center;
+  border-left: 5px solid var(--moa-red);
+}
+
+.moa-fans-page .document-card-copy {
+  min-width: 0;
+}
+
+.moa-fans-page .document-label {
+  margin: 0 0 0.4rem;
+  color: var(--moa-red) !important;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.moa-fans-page .document-actions {
+  margin-top: 1.25rem;
+}
+
+.moa-fans-page .document-icon {
+  display: grid;
+  width: 92px;
+  height: 112px;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--moa-red);
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+/* TABLES */
+
+.moa-fans-page .penalty-source-note {
+  padding: 1rem;
+  border-left: 4px solid var(--moa-red);
+  background: var(--moa-gray);
+  font-size: 0.9rem;
+}
+
+.moa-fans-page .penalty-groups {
+  display: grid;
+  gap: 1rem;
+}
+
+.moa-fans-page .penalty-group {
+  padding: 0;
+  overflow: hidden;
+}
+
+.moa-fans-page .penalty-group summary {
+  padding: 1.15rem 1.4rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.moa-fans-page .penalty-group[open] summary {
+  border-bottom: 1px solid var(--moa-border);
+  background: var(--moa-gray);
+}
+
+.moa-fans-page .penalty-table-wrap,
+.moa-fans-page .comparison-table-wrap {
+  overflow-x: auto;
+}
+
+.moa-fans-page .comparison-table-wrap {
+  border: 1px solid var(--moa-border);
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.moa-fans-page .penalty-table,
+.moa-fans-page .comparison-table {
+  width: 100%;
+  min-width: 660px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.moa-fans-page .comparison-table {
+  min-width: 740px;
+}
+
+.moa-fans-page table th,
+.moa-fans-page table td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--moa-border);
+  vertical-align: top;
+}
+
+.moa-fans-page table thead th {
+  background: var(--moa-black);
+  color: #fff;
+  font-size: 0.88rem;
+}
+
+.moa-fans-page table tbody tr:nth-child(even) {
+  background: var(--moa-gray);
+}
+
+.moa-fans-page table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.moa-fans-page .penalty-table td:last-child {
+  white-space: nowrap;
+}
+
+/* RULE EXPLANATIONS */
+
+.moa-fans-page .rule-card {
+  position: relative;
+  padding-top: 3.8rem;
+}
+
+.moa-fans-page .rule-number {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.5rem;
+  color: var(--moa-red);
+  font-weight: 900;
+}
+
+.moa-fans-page .football-info-card,
+.moa-fans-page .holding-check-card,
+.moa-fans-page .basketball-myth-card {
+  border-top: 4px solid var(--moa-red);
+}
+
+.moa-fans-page .football-info-card h4 {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+}
+
+.moa-fans-page .holding-step {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: var(--moa-red);
+  color: #fff;
+  font-weight: 900;
+}
+
+.moa-fans-page .holding-subheading {
+  margin: 2rem 0 1rem;
+}
+
+.moa-fans-page .holding-subheading h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.moa-fans-page .holding-subheading p {
+  margin: 0;
+}
+
+.moa-fans-page .holding-source-note,
+.moa-fans-page .basketball-source-note,
+.moa-fans-page .comparison-note {
+  margin: 1.25rem 0 0;
+  color: var(--moa-muted);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+/* MINNESOTA RUNNING TIME */
+
+.moa-fans-page .mercy-rule-section {
+  background: var(--moa-black);
+}
+
+.moa-fans-page .mercy-rule-section .section-heading h2,
+.moa-fans-page .mercy-rule-section .section-heading > p:last-child {
+  color: #fff;
+}
+
+.moa-fans-page .mercy-rule-section .section-kicker {
+  color: #ffd8dc;
+}
+
+.moa-fans-page .mercy-rule-grid {
+  margin-bottom: 1.5rem;
+}
+
+.moa-fans-page .mercy-score {
+  display: block;
+  margin-bottom: 0.7rem;
+  color: var(--moa-red);
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.moa-fans-page .tips-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none;
+}
+
+.moa-fans-page .tips-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.moa-fans-page .tips-list strong {
+  display: grid;
+  flex: 0 0 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--moa-red);
+  color: #fff;
+}
+
+.moa-fans-page .mercy-rule-footer {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1.3rem;
+  color: #fff;
+}
+
+.moa-fans-page .mercy-rule-footer p {
+  margin: 0;
+}
+
+.moa-fans-page .mercy-rule-footer a {
+  justify-self: start;
+  color: #ffd8dc;
+}
+
+.moa-fans-page .keep-together {
+  white-space: nowrap;
+}
+
+/* BASKETBALL SIGNALS */
+
+.moa-fans-page .basketball-signal-card {
+  margin: 0;
+  border: 1px solid var(--moa-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+}
+
+.moa-fans-page .basketball-signal-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+.moa-fans-page .basketball-signal-card figcaption {
+  padding: 1.25rem;
+  border-top: 1px solid var(--moa-border);
+}
+
+.moa-fans-page .basketball-signal-card h3 {
+  margin: 0 0 0.6rem;
+}
+
+.moa-fans-page .basketball-signal-card p {
+  margin: 0;
+  color: var(--moa-muted);
+}
+
+.moa-fans-page .basketball-chart-link {
+  margin-top: 1.5rem;
+  padding: 1.4rem;
+  border-left: 5px solid var(--moa-red);
+  background: #fff;
+}
+
+.moa-fans-page .basketball-chart-link h3 {
+  margin-top: 0;
+}
+
+.moa-fans-page .basketball-myth-label {
+  margin: 0 0 0.5rem;
+  color: var(--moa-red) !important;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* RECRUITMENT */
+
+.moa-fans-page .recruit-section {
+  background: var(--moa-gray);
+}
+
+.moa-fans-page .recruit-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  align-items: center;
+  gap: 3rem;
+}
+
+.moa-fans-page .recruit-copy {
+  min-width: 0;
+}
+
+.moa-fans-page .recruit-copy p {
+  line-height: 1.75;
+}
+
+.moa-fans-page .recruit-actions {
+  margin-top: 1.4rem;
+}
+
+.moa-fans-page .qr-card {
+  padding: 1rem;
+  border-radius: var(--radius);
+  background: #fff;
+  text-align: center;
+  border: 1px solid var(--moa-border);
+}
+
+.moa-fans-page .qr-card img {
+  width: 100%;
+  height: auto;
+}
+
+.moa-fans-page .qr-card p {
+  margin: 0.7rem 0 0;
+  font-weight: 800;
+}
+
+/* HUB CARDS */
+
+.moa-fans-page .fan-hub-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid var(--moa-border);
+  border-top: 5px solid var(--moa-red);
+  border-radius: var(--radius);
+  color: var(--moa-black);
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+
+.moa-fans-page .fan-hub-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--moa-red);
+}
+
+.moa-fans-page .fan-hub-label {
+  color: var(--moa-red);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+}
+
+.moa-fans-page .fan-hub-card h3 {
+  margin: 0.6rem 0;
+  font-size: 2rem;
+}
+
+.moa-fans-page .fan-hub-card p {
+  font-weight: 400;
+  color: var(--moa-muted);
+}
+
+.moa-fans-page .fan-hub-action {
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--moa-red);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .moa-fans-page .holding-check-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .moa-fans-page .basketball-signal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .moa-fans-page .fan-intro-grid,
+  .moa-fans-page .recruit-panel,
+  .moa-fans-page .position-grid,
+  .moa-fans-page .rule-card-grid,
+  .moa-fans-page .basketball-myth-grid,
+  .moa-fans-page .mercy-rule-grid,
+  .moa-fans-page .fan-hub-grid,
+  .moa-fans-page .three-position-grid,
+  .moa-fans-page .football-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .moa-fans-page .position-card-wide,
+  .moa-fans-page .rule-card-wide {
+    grid-column: auto;
+  }
+
+  .moa-fans-page .qr-card {
+    max-width: 230px;
+  }
+}
+
+@media (max-width: 600px) {
+  .moa-fans-page .basketball-signal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .moa-fans-page .document-card {
+    grid-template-columns: 1fr;
+  }
+
+  .moa-fans-page .document-icon {
+    display: none;
+  }
+
+  .moa-fans-page .content-card {
+    padding: 1.25rem;
+  }
+
+  .moa-fans-page .rule-card {
+    padding-top: 3.8rem;
+  }
+
+  .moa-fans-page .penalty-group {
+    padding: 0;
+  }
+
+  .moa-fans-page .fan-hub-card {
+    padding: 1.5rem;
+  }
+
+  .moa-fans-page .tips-list {
+    grid-template-columns: 1fr;
+  }
+
+  .moa-fans-page section[id] {
+    scroll-margin-top: 190px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .moa-fans-page .fan-hub-card {
+    transition: none;
+  }
+
+  .moa-fans-page .fan-hub-card:hover {
+    transform: none;
+  }
+}

@@ -1,21 +1,95 @@
-<header class="site-header">
+<header class="site-header header-with-fans">
   <div class="header-inner">
-    <a class="site-brand" href="/" aria-label="Minneapolis Officials Association Home">
-      <img src="/assets/images/logo/moa-logo.png" alt="Minneapolis Officials Association logo">
-      
+    <a
+      class="site-brand"
+      href="/"
+      aria-label="Minneapolis Officials Association Home"
+    >
+      <img
+        src="/assets/images/logo/moa-logo.png"
+        alt="Minneapolis Officials Association logo"
+      >
     </a>
 
     <nav class="site-nav" aria-label="Main navigation">
       <a href="/" data-page="home">Home</a>
       <a href="/new-officials/" data-page="new-officials">New Officials</a>
       <a href="/member-resources/" data-page="member-resources">Member Resources</a>
-       <a href="/video-catalog/" data-page="video-catalog">Video Catalog</a>
+      <a href="/video-catalog/" data-page="video-catalog">Video Catalog</a>
       <a href="/basketball/" data-page="basketball">Basketball</a>
       <a href="/football/" data-page="football">Football</a>
+      <a href="/fans/" data-page="fans">For the Fans</a>
       <a href="/calendar/" data-page="calendar">Calendar</a>
       <a href="/news/" data-page="news">News</a>
-      <a href="https://minneapolis-officials-association.square.site/" data-page="dues">Dues</a>
+      <a
+        href="https://minneapolis-officials-association.square.site/"
+        data-page="dues"
+      >Dues</a>
       <a href="/contact/" data-page="contact">Contact</a>
     </nav>
   </div>
 </header>
+
+<style>
+  .header-with-fans .header-inner {
+    width: min(1440px, calc(100% - 2rem));
+    min-height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0.65rem 0;
+  }
+
+  .header-with-fans .site-brand {
+    flex: 0 0 auto;
+  }
+
+  .header-with-fans .site-brand img {
+    width: 64px;
+    height: auto;
+  }
+
+  .header-with-fans .site-nav {
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 0.1rem;
+    padding: 0 4.5rem 0 0;
+    overflow: visible;
+  }
+
+  .header-with-fans .site-nav a {
+    flex: 0 0 auto;
+    padding: 0.65rem 0.55rem;
+    font-size: 0.84rem;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  /* Smaller screens: navigation below the logo. */
+  @media (max-width: 1100px) {
+    .header-with-fans .header-inner {
+      flex-wrap: wrap;
+      gap: 0.65rem;
+    }
+
+    .header-with-fans .site-nav {
+      flex: 1 1 100%;
+      width: 100%;
+      justify-content: flex-start;
+      overflow-x: auto;
+      padding-bottom: 0.35rem;
+    }
+
+    .header-with-fans .site-nav a {
+      padding: 0.65rem 0.75rem;
+      font-size: 0.9rem;
+    }
+  }
+</style>
